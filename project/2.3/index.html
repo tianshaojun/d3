@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #ctr {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <svg id="ctr">
+        <!-- Rectangle -->
+        <!-- <rect width="100" height="100" fill="#f44336" stroke="#8bc34a" stroke-width="10" x="25" y="25"></rect> -->
+
+        <!-- Circle, ellipses, lines -->
+        <!-- <ellipse rx="200" ry="100" cx="205" cy="105" fill="#2e96f3" stroke="#000" stroke-width="10"></ellipse>
+        <line x1="25" y1="25" x2="200" y2="200" stroke="red" stroke-width="10"></line>
+        <circle r="100" cx="105" cy="105" fill="#9727b0" stroke="#e91e83" stroke-width="10"></circle> -->
+
+        <!-- Polygons & Polylines -->
+        <!-- <polygon points="220,10 123,234 300,210 170,250" fill="#607d8b" stroke="#000" stroke-width="10"></polygon> -->
+        <!-- <polyline points="220,10 123,234 300,210 170,250" fill="none" stroke="#000" stroke-width="10"></polyline> -->
+
+        <!-- path -->
+        <!-- 直线 -->
+        <!-- <path d="M100,100 L300,150 L300,300" fill="none" stroke-width="10" stroke="#000"></path>
+         -->
+        <!-- 曲线 -->
+        <!-- <path d="M100,100 L300,150 L300,300 Q200,400 100,200" fill="none" stroke-width="10" stroke="#000"></path> -->
+        <!-- Quadratic Bezier Curve Visualization -->
+        <!-- <circle r="15" fill="none" stroke-width="5" stroke="red" cx="300" cy="300"></circle>
+        <circle r="15" fill="none" stroke-width="5" stroke="red" cx="200" cy="400"></circle>
+        <circle r="15" fill="none" stroke-width="5" stroke="red" cx="100" cy="200"></circle>
+
+        <line x1="300" y1="300" x2="200" y2="400" stroke-width="5" stroke="blue"></line>
+        <line x1="200" y1="400" x2="100" y2="200" stroke-width="5" stroke="blue"></line>
+        <line x1="300" y1="300" x2="100" y2="200" stroke-width="5" stroke="green"></line> -->
+
+        <!-- <path d="
+                 M 100, 100 
+                 L 300, 150 
+                 L 300, 300 
+                 Q 200, 400 100, 200
+                " 
+                fill="none" stroke-width="10" stroke="#000">
+        </path>
+
+        <path d="
+                 m 100, 100 
+                 l 300, 150 
+                 l 300, 300 
+                 q 200, 400 100, 200
+                " 
+                fill="none" stroke-width="10" stroke="yellow">
+        </path> -->
+
+        <!-- Text -->
+        <!-- <a xlink:href="http://www.baidu.com" target="_blank">
+            <text fill="red" font-size="30" x="50" y="50">
+                Hello World
+                <tspan x="200" y="200">Second line!</tspan>
+            </text>
+        </a> -->
+
+        <!-- Definitions, Groups -->
+        <!-- <defs>
+            <g id="rectangle">
+                <rect width="50" height="50"></rect>
+                <rect width="50" height="50" x="50" y="100" fill="blue"></rect>
+            </g>
+        </defs>
+        <use xlink:href="#rectangle"></use> -->
+
+        <!-- Text path -->
+        <!-- <defs>
+            <path id="custom_text_path"
+                  d="M0,0 L300,300"></path>
+        </defs>
+        <text x="100" y="100" stroke="#000" font-size="30">
+            <textpath xlink:href="#custom_text_path">
+                Hello World!
+            </textpath>
+        </text> -->
+        <!-- <defs>
+            <path id="custom_text_path"
+                  d="M0,0 Q0,100 150,100"></path>
+        </defs>
+        <text x="10" y="100" stroke="#000" font-size="30">
+            <textpath xlink:href="#custom_text_path">
+                Hello World!
+            </textpath>
+        </text> -->
+
+        <!-- Clip Paths -->
+        <defs>
+            <clippath id="custom_clip_path">
+                <rect x="250" y="250" width="200" height="200"></rect>
+                <circle r="50" cx="200" cy="200"></circle>
+            </clippath>
+        </defs>
+        <circle cx="200" cy="250" r="200" fill="blue" clip-path="url(#custom_clip_path)"></circle>
+
+        <!-- Clip Path visualzation -->
+        <rect x="250" y="250" width="200" height="200" fill="none" stroke="green" stroke-width="5"></rect>
+        <circle cx="250" cy="250" r="200" stroke="red" fill="none" stroke-width="5"></circle>
+        <circle r="50" cx="200" cy="200" fill="none" stroke="green" stroke-width="5"></circle>
+        
+    </svg>
+</body>
+
+</html>
